@@ -94,7 +94,10 @@ function getWeatherData(lat, lng){
     });
 }
 
-
+server.get('/event', eventHandler);
+function Event() {
+    
+}
 
 server.use('*', (request, response) => {
     response.status(404).send('Sorry, not found');
